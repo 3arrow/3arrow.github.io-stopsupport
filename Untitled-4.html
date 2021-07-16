@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+</head>
+
+<body>
+ <td height="720" valign="top" width="321" >
+      
+     <div id=demo style=overflow:hidden;height:500px;width:166px;>
+<div id=demo1>  
+<img border="0" src="biaodan2_F200602161743593194929892.jpg" width="150" height="130">
+<img src="biaodan2_0038.jpg" width="150" height="130">
+<img src="biaodan2_F2004112908353400000.jpg" width="150" height="130">&nbsp;</div>
+<div id=demo2>
+  <img border="0" src="biaodan2_2002.8w1.jpg" width="150" height="130">
+  <img border="0" src="biaodan2_NewsMedia_176140.jpg" width="150" height="130"></div>
+</div>
+
+     <p>&nbsp;</p>
+     <p>
+  <script>
+var speed=30
+demo2.innerHTML=demo1.innerHTML
+function Marquee(){
+if(demo2.offsetTop-demo.scrollTop<=0)
+demo.scrollTop=demo1.offsetHeight
+else{
+demo.scrollTop++
+}
+}
+var MyMar=setInterval(Marquee,speed)
+demo.onmouseover=function() {clearInterval(MyMar)}
+demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+     </script>
+       <a href="biaoge.html"><img src="images/按钮图像/button9.gif" alt="返回按钮1" width="150" height="30" border="0" /></a></p>
+     <p>&nbsp;
+    </p>
+	</td>
+ 
+</table>
+
+</body>
+</html>
