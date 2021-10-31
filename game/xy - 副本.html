@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>游戏</title>
+    <Link Rel="SHORTCUT ICON" href="xyico.ico">
+    <body background="xybg.jpg"
+style=" background-repeat:no-repeat ;
+background-size:100% 100%;
+background-attachment: fixed;"
+    >
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <span>人物血量:</span><span id="Health">120</span><br>
+    <span>人物攻击力:</span><span id="Damage">10</span><br>
+    <span>怪物血量:</span><span id="MonsterHealth">80</span><br>
+    <span>怪物攻击力:</span><span id="MonsterDamage">10</span><br>
+    <button onclick="Attack()">攻击</button>
+  </body>
+  <script>
+setInterval(MonsterAttack,5000);
+var Health=120;
+var Damage=10;
+var MonsterHealth=80;
+var MonsterDamage=10;
+function Attack(){
+if(MonsterHealth>0)
+  {
+  MonsterHealth=MonsterHealth-Damage;
+  document.getElementById("MonsterHealth").innerHTML=MonsterHealth;
+  if(MonsterHealth<=0){alert("怪物死了");MonsterHealth=80;document.getElementById
+("MonsterHealth").innerHTML=MonsterHealth;}
+  }
+}
+
+function MonsterAttack(){
+  if(Health>0){
+    Health=Health-MonsterDamage;
+    document.getElementById("Health").innerHTML=Health;
+    if(Health<=0){alert("你挂了,菜鸡!!!");Health=120;document.getElementById
+  ("Health").innerHTML=Health;}
+  }
+}
+</script>
+</html>
